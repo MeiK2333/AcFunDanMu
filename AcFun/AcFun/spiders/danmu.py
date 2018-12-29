@@ -47,6 +47,7 @@ class DanmuSpider(RedisCrawlSpider):
             i['video_id'] = response.meta['video_id']
             i['c'] = i['c'].split(',')
             i['c'][5] = int(i['c'][5])
+            i['id'] = i['c'][6]
             max_time = max(max_time, i['c'][5])
 
             item = AcFunItem()
