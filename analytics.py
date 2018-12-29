@@ -18,7 +18,8 @@ def view_count(limit=20):
         video = {
             'id': item['id'],
             'title': item['title'],
-            'viewCount': item['viewCount']
+            'viewCount': item['viewCount'],
+            'danmuSize': item['danmuSize']
         }
         data.append(video)
     return data
